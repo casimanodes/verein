@@ -5,6 +5,7 @@ import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 // import { AlertDemo } from "@/components/alert-demo"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
       <MainNav />
         {children}
         <SpeedInsights />
+        <Analytics />
         <Footer />
         {/* <AlertDemo /> */}
 
