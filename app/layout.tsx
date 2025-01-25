@@ -4,7 +4,7 @@ import "./globals.css";
 import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 // import { AlertDemo } from "@/components/alert-demo"
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -31,6 +31,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       <MainNav />
         {children}
+        <SpeedInsights />
         <Footer />
         {/* <AlertDemo /> */}
 
