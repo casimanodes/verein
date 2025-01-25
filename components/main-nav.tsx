@@ -46,15 +46,15 @@ const navItems = [
       { title: "Anmeldung", href: "/join#registration" },
     ],
   },
-  {
-    title: "Training",
-    href: "/training",
-    items: [
-      { title: "Anfänger", href: "/training#beginners" },
-      { title: "Fortgeschrittene", href: "/training#advanced" },
-      { title: "Leistungssport", href: "/training#competitive" },
-    ],
-  },
+  // {
+  //   title: "Training",
+  //   href: "/training",
+  //   items: [
+  //     { title: "Anfänger", href: "/training#beginners" },
+  //     { title: "Fortgeschrittene", href: "/training#advanced" },
+  //     { title: "Leistungssport", href: "/training#competitive" },
+  //   ],
+  // },
 ]
 
 export function MainNav() {
