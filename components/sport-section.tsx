@@ -12,71 +12,57 @@ export function SportSection() {
           <div>
             <h3 className="text-2xl font-semibold mb-4">Schlagball</h3>
             <p className="text-gray-700 mb-4">
-              Schlagball ist eine dynamische Teamsportart, die Geschicklichkeit, Schnelligkeit und Teamgeist erfordert.
-              Es ist eine Mischung aus traditionellem Baseball und europäischen Ballspielen, die für Spieler aller
-              Altersgruppen geeignet ist.
+              Schlagball kombiniert Elemente aus Baseball, Brennball und Völkerball. Zwei Teams wechseln sich im Schlagrecht ab. 
+              Die Spieler des schlagenden Teams schlagen den Ball ins Spielfeld und laufen durch das Feld zu einem Mal und zurück,
+              um Punkte zu sammeln. Das andere Team versucht, den Ball zu kontrollieren, ihn geschickt zuzuspielen und die Läufer 
+              abzuwerfen. Nach einem erfolgreichen Abwurf wechseln die Teams die Rollen.
             </p>
             <div className="hidden md:block">
               <h4 className="text-xl font-semibold mb-2">Regeln</h4>
               <ul className="list-disc list-inside text-gray-700 mb-4">
                 <li>Zwei Teams mit je 12 Spielern</li>
-                <li>Spielfeld ist ein Quadrat mit 60m Seitenlänge</li>
-                <li>Schlagteam versucht, den Ball weit zu schlagen und Punkte zu erzielen</li>
-                <li>Feldteam versucht, den Ball zu fangen und das Schlagteam auszumachen</li>
-                <li>Ein Spiel besteht aus 2 Halbzeiten à 30 Minuten</li>
+
               </ul>
-              <h4 className="text-xl font-semibold mb-2">Ausrüstung</h4>
+              <h4 className="text-xl font-semibold mb-2">Wir benutzen</h4>
               <ul className="list-disc list-inside text-gray-700 mb-4">
-                <li>Schlagball: Ähnlich einem Tennisball, aber etwas größer und weicher</li>
-                <li>Schlagholz: Aus Holz oder Kunststoff, etwa 80cm lang</li>
-                <li>Handschuhe: Nicht zwingend erforderlich, aber empfohlen</li>
-                <li>Sportkleidung: Bequeme Sportbekleidung und Laufschuhe</li>
+                <li>Schlagball: Ein Tennisball großer Lederball</li>
+                <li>Keule: Zum Schlagen des Balles ins Spielfeld</li>
+
               </ul>
               <h4 className="text-xl font-semibold mb-2">Turniere</h4>
-              <p className="text-gray-700 mb-2">Unser Verein organisiert jährlich mehrere Turniere:</p>
+              <p className="text-gray-700 mb-2">Unser Verein organisiert jedes Jahr das Winterhuder Herbstturnier</p>
               <ul className="list-disc list-inside text-gray-700 mb-4">
-                <li>Frühjahrsturnier (April)</li>
-                <li>Sommerpokal (Juli)</li>
-                <li>Herbstmeisterschaft (September)</li>
-                <li>Wintercup (Indoor, Januar)</li>
+                <li>Herbstturnier </li>
               </ul>
               <p className="text-gray-700">Zusätzlich nehmen wir an regionalen und überregionalen Wettkämpfen teil.</p>
             </div>
+
             <Accordion type="single" collapsible className="md:hidden w-full">
               <AccordionItem value="rules">
                 <AccordionTrigger>Regeln</AccordionTrigger>
                 <AccordionContent>
                   <ul className="list-disc list-inside text-gray-700">
                     <li>Zwei Teams mit je 12 Spielern</li>
-                    <li>Spielfeld ist ein Quadrat mit 60m Seitenlänge</li>
-                    <li>Schlagteam versucht, den Ball weit zu schlagen und Punkte zu erzielen</li>
-                    <li>Feldteam versucht, den Ball zu fangen und das Schlagteam auszumachen</li>
-                    <li>Ein Spiel besteht aus 2 Halbzeiten à 30 Minuten</li>
                   </ul>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="equipment">
-                <AccordionTrigger>Ausrüstung</AccordionTrigger>
+                <AccordionTrigger>Wir benutzen</AccordionTrigger>
                 <AccordionContent>
                   <ul className="list-disc list-inside text-gray-700">
-                    <li>Schlagball: Ähnlich einem Tennisball, aber etwas größer und weicher</li>
-                    <li>Schlagholz: Aus Holz oder Kunststoff, etwa 80cm lang</li>
-                    <li>Handschuhe: Nicht zwingend erforderlich, aber empfohlen</li>
-                    <li>Sportkleidung: Bequeme Sportbekleidung und Laufschuhe</li>
+                    <li>Schlagball: Ein Tennisball großer Lederball</li>
+                    <li>Keule: Zum Schlagen des Balles ins Spielfeld</li>
                   </ul>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="tournaments">
                 <AccordionTrigger>Turniere</AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-gray-700">Unser Verein organisiert jährlich mehrere Turniere:</p>
+                  <p className="text-gray-700">Unser Verein organisiert jedes Jahr das Winterhuder Herbstturnier</p>
                   <ul className="list-disc list-inside text-gray-700">
-                    <li>Frühjahrsturnier (April)</li>
-                    <li>Sommerpokal (Juli)</li>
-                    <li>Herbstmeisterschaft (September)</li>
-                    <li>Wintercup (Indoor, Januar)</li>
+                    <li>Herbstturnier</li>
                   </ul>
-                  <p className="text-gray-700 mt-2">
+                  <p className="text-gray-700">
                     Zusätzlich nehmen wir an regionalen und überregionalen Wettkämpfen teil.
                   </p>
                 </AccordionContent>
