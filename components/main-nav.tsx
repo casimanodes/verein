@@ -1,6 +1,7 @@
 "use client"
 import * as React from "react"
 import Link from "next/link"
+import "/app/globals.css";
 
 import { cn } from "@/lib/utils"
 import {
@@ -10,11 +11,12 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
+  // navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
+import { ConfettiButton } from "@/components/confetti-button"
 
 const navItems = [
   {
@@ -59,9 +61,9 @@ export function MainNav() {
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-6 bg-white shadow-md">
+    <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-6 pr-8 bg-white shadow-md">
       <Link href="/" className="flex items-center space-x-2">
-        <span className="font-bold text-xl">Sportverein XYZ</span>
+        <span className="font-bold text-xl">Schlagball Hamburg e.V.</span>
       </Link>
       <NavigationMenu className="hidden md:flex space-x-4">
         <NavigationMenuList>
@@ -72,7 +74,7 @@ export function MainNav() {
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3">
                     <NavigationMenuLink asChild>
-                      <a
+                      <Link
                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                         href={item.href}
                       >
@@ -80,14 +82,16 @@ export function MainNav() {
                         <p className="text-sm leading-tight text-muted-foreground">
                           Erfahren Sie mehr über {item.title.toLowerCase()}.
                         </p>
-                      </a>
+                      </Link>
                     </NavigationMenuLink>
                   </li>
-                  {item.items.map((subItem) => (
-                    <ListItem key={subItem.href} href={subItem.href} title={subItem.title}>
-                      Mehr Informationen zu {subItem.title.toLowerCase()}.
-                    </ListItem>
-                  ))}
+                  <li>
+                    {item.items.map((subItem) => (
+                      <ListItem key={subItem.href} href={subItem.href} title={subItem.title}>
+                        Mehr Informationen zu {subItem.title.toLowerCase()}.
+                      </ListItem>
+                    ))}
+                  </li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -101,28 +105,36 @@ export function MainNav() {
             <span className="sr-only">Toggle menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="right">
-          <nav className="flex flex-col gap-4">
-            {navItems.map((item) => (
-              <div key={item.href} className="flex flex-col gap-2">
-                <Link href={item.href} className="nav-link text-sm font-medium" onClick={() => setIsOpen(false)}>
-                  {item.title}
-                </Link>
-                {item.items.map((subItem) => (
-                  <Link
-                    key={subItem.href}
-                    href={subItem.href}
-                    className="nav-link text-sm pl-4"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {subItem.title}
+        <SheetContent side="right" className="w-[300px] sm:w-[400px] flex flex-col">
+          <nav className="flex-1 overflow-y-auto">
+            <div className="flex flex-col gap-4">
+              {navItems.map((item) => (
+                <div key={item.href} className="flex flex-col gap-2">
+                  <Link href={item.href} className="nav-link text-sm font-medium" onClick={() => setIsOpen(false)}>
+                    {item.title}
                   </Link>
-                ))}
-              </div>
-            ))}
+                  {item.items.map((subItem) => (
+                    <Link
+                      key={subItem.href}
+                      href={subItem.href}
+                      className="nav-link text-sm pl-4"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {subItem.title}
+                    </Link>
+                  ))}
+                </div>
+              ))}
+            </div>
           </nav>
+          <div className="mt-4 pt-4 border-t">
+            <ConfettiButton href="/mitgliedsantrag.pdf">Mitglied werden</ConfettiButton>
+          </div>
         </SheetContent>
       </Sheet>
+      <div className="hidden md:block ml-4">
+        <ConfettiButton href="/mitgliedsantrag.pdf">Mitglied werden</ConfettiButton>
+      </div>
     </div>
   )
 }

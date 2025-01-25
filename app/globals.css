@@ -5,12 +5,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
 
 @layer base {
   :root {
@@ -68,11 +68,76 @@ body {
   }
 }
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
+} */
+
+
+
+/* custom css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
 }
+
+.nav-link {
+  position: relative;
+  color: #253c6a;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: rgb(231, 103, 18);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: rgb(231, 103, 18);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #253c6a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: rgb(231, 103, 18);
+}
+
+.nav-button {
+  background-color: rgb(231, 103, 18);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #253c6a;
+}
+
+section {
+  scroll-margin-top: 5rem;
+}
+
