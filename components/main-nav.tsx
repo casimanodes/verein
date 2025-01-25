@@ -23,9 +23,9 @@ const navItems = [
     title: "Über uns",
     href: "/about",
     items: [
-      { title: "Geschichte", href: "/about#history" },
-      { title: "Vorstand", href: "/about#board" },
-      { title: "Philosophie", href: "/about#philosophy" },
+      { title: "Wer sind Wir", href: "/about#history" },
+      { title: "Cassio / Mateo", href: "/about#board" },
+      { title: "Schlagball Einleitung", href: "/about#philosophy" },
     ],
   },
   {
@@ -33,15 +33,15 @@ const navItems = [
     href: "/sport",
     items: [
       { title: "Regeln", href: "/sport#rules" },
-      { title: "Ausrüstung", href: "/sport#equipment" },
+      { title: "wir benutzen", href: "/sport#equipment" },
       { title: "Turniere", href: "/sport#tournaments" },
     ],
   },
   {
-    title: "Mitglied werden",
+    title: "Mitglieder",
     href: "/join",
     items: [
-      { title: "Vorteile", href: "/join#benefits" },
+      { title: "Training", href: "/join#benefits" },
       { title: "Beiträge", href: "/join#fees" },
       { title: "Anmeldung", href: "/join#registration" },
     ],
