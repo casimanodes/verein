@@ -8,7 +8,7 @@
 
 # testing
 /coverage
-
+vercel_extras.tsx
 # next.js
 /.next/
 /out/
