@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+// import { Button } from "@/components/ui/button"
+// import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export function SportSection() {
@@ -34,7 +34,6 @@ export function SportSection() {
               <ul className="list-disc list-inside text-gray-700 mb-4">
                 <li>Herbstturnier </li>
               </ul>
-              <p className="text-gray-700">Zusätzlich nehmen wir an regionalen und überregionalen Wettkämpfen teil.</p>
             </div>
 
             <Accordion type="single" collapsible className="md:hidden w-full">
@@ -59,18 +58,14 @@ export function SportSection() {
                 <AccordionTrigger>Turniere</AccordionTrigger>
                 <AccordionContent>
                   <p className="text-gray-700">Unser Verein organisiert jedes Jahr das Winterhuder Herbstturnier</p>
-                  <ul className="list-disc list-inside text-gray-700">
-                    <li>Herbstturnier</li>
-                  </ul>
-                  <p className="text-gray-700">
-                    Zusätzlich nehmen wir an regionalen und überregionalen Wettkämpfen teil.
-                  </p>
+
+
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-            <Button asChild className="mt-4">
+            {/* <Button asChild className="mt-4">
               <Link href="#">Mehr erfahren</Link>
-            </Button>
+            </Button> */}
           </div>
           <div>
             <Image

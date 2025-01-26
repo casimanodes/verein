@@ -2,6 +2,7 @@
 import * as React from "react"
 import Link from "next/link"
 import "/app/globals.css";
+import { DownloadButton } from "@/components/downloadbutton"
 
 import { cn } from "@/lib/utils"
 import {
@@ -16,7 +17,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
-import { ConfettiButton } from "@/components/confetti-button"
+// import { ConfettiButton } from "@/components/confetti-button"
 
 const navItems = [
   {
@@ -128,12 +129,14 @@ export function MainNav() {
             </div>
           </nav>
           <div className="mt-4 pt-4 border-t">
-            <ConfettiButton href="/mitgliedsantrag.pdf">Mitglied werden</ConfettiButton>
+            <DownloadButton />
           </div>
         </SheetContent>
       </Sheet>
       <div className="hidden md:block ml-4">
-        <ConfettiButton href="/mitgliedsantrag.pdf">Mitglied werden</ConfettiButton>
+        {/* <ConfettiButton href="/mitgliedsantrag.pdf">Mitglied werden</ConfettiButton> */}
+        <DownloadButton />
+
       </div>
     </div>
   )

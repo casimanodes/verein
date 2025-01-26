@@ -1,5 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { ConfettiButton } from "@/components/confetti-button"
+// import { ConfettiButton } from "@/components/confetti-button"
+import { DownloadButton } from "@/components/downloadbutton"
 import Link from "next/link"
 
 export function JoinSection() {
@@ -89,7 +90,7 @@ export function JoinSection() {
           </Accordion>
         </div>
         <div className="text-center">
-          <ConfettiButton href="/mitgliedsantrag.pdf">Mitgliedsantrag herunterladen</ConfettiButton>
+          <DownloadButton />
         </div>
       </div>
     </section>

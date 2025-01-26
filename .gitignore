@@ -13,6 +13,8 @@ vercel_extras.tsx
 /.next/
 /out/
 
+trash.txs
+
 # production
 /build
 

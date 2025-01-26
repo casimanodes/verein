@@ -21,7 +21,7 @@ export function AboutSection() {
           <div>
             <h3 className="text-2xl font-semibold mb-4">Wir sind Cassio & Mateo</h3>
             <p className="text-gray-700 mb-4">
-            seit 3 Jahren unterrichten wir gemeinsam, Schlagball an der Winterhuder 
+            seit 3 Jahren unterrichten wir gemeinsam Schlagball an der Winterhuder 
                 Reformschule. Freizeitlich geben wir seit über 5 Jahren jeden Freitag von 14-16 Uhr Training. Wir haben auch erfolgreich ein 3 Wöchiges Projekt für Oberstufenschüler geleitet, 
                 denen wir Schlagball beigebracht und am von uns selbst organisierten Herbst-Turnier teilnehmen lassen haben. 
                 Um noch mehr Menschen Spaß an diesem Sport finden zu lassen, haben wir einen Verein gegründet.
