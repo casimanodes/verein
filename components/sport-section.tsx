@@ -66,9 +66,7 @@ export function SportSection() {
                 <p className="text-gray-700 mb-2">Unser Verein organisiert jedes Jahr im September das Winterhuder Herbstturnier</p>
                 <p className="text-gray-700 mb-2">Himmelfahrt Spiekeroog - Deutsche Meisterschaft</p>
                 <p className="text-gray-700 mb-2">Kieler Woche</p>
-              <ul className="list-disc list-inside text-gray-700 mb-4">
-                <li>Herbstturnier </li>
-              </ul>
+
             </div>
 
             <Accordion type="single" collapsible className="md:hidden w-full">
