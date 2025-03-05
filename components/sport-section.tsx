@@ -26,13 +26,23 @@ export function SportSection() {
             </p>
             <div className="hidden md:block">
               <h4 className="text-xl font-semibold mb-2">Regeln</h4>
-              <ul className="list-disc list-inside text-gray-700 mb-4">
-                <li>Zwei Teams mit je 12 Spielern</li>
+                <h6 className="text-lg font-semibold mb-2">Laufpunkt</h6>
+                  <p>Schafft es ein Spieler der Schlagmannschaft, 
+                    nach Erwerb des Laufrechts zu einer der Tickstangen und zurück ins Schlagmal zu laufen, 
+                    ohne dass zwischenzeitlich ein Wechsel stattgefunden hat, so erhält die Schlagmannschaft einen Laufpunkt.</p>
+                <h6 className="text-lg font-semibold mb-2">Wechselpunkt</h6>
+                  <p>Wird ein Läufer von einem Spieler der Feldmannschaft abgeworfen, so erhält die Feldmannschaft einen Wechselpunkt. 
+                    Erzwingt die Feldpartei durch Abdrängen eines Läufers der Schlagmannschaft aus dem Spielfeld hinaus den Wechsel des Schlagrechts, erhält sie keinen Wechselpunkt.</p>
+                <h6 className="text-lg font-semibold mb-2">Fangpunkt</h6>
+                  <p>Wird der geschlagene Ball von einem Spieler der Feldmannschaft direkt aus der Luft, mit einer Hand und ohne 
+                    Nachgreifen gefangen, so erhält die Feldmannschaft einen Fangpunkt. Fangpunkte werden auch bei ins Aus geschlagenen, ungültigen Schlägen der Schlagmannschaft durch Fangen des Balls gemacht.</p>
+                <h6 className="text-lg font-semibold mb-2">Weitschlagpunkt</h6>
+                      <p>Schlägt ein Spieler den Ball über das Spielfeld hinaus in das dahinter liegende Weitschlagfeld, also weiter als 70 Meter, so erhält die Schlagmannschaft einen Weitschlagpunkt.</p>
 
-              </ul>
+          
               <h4 className="text-xl font-semibold mb-2">Equipment</h4>
               
-              <h5 className="text-l font-semibold mb-2">Schlagball (Ball)</h5>
+              <h5 className="text-lg font-semibold mb-2">Schlagball (Ball)</h5>
                 <p className="list-disc list-inside text-gray-700 mb-4">
                   Spielgerät ist ein Lederball, der Schlagball. Das Gewicht des Balles soll vor dem Spiel mindestens 70 g, höchstens 85 g betragen, 
                   der Umfang 19 cm bis 21 cm. Das Leder soll wegen der Blendung im Sonnenschein keine helle Farbe haben. Der Regelball 
