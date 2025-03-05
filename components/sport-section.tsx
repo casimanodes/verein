@@ -11,11 +11,18 @@ export function SportSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div>
             <h3 className="text-2xl font-semibold mb-4">Schlagball</h3>
-            <p className="text-gray-700 mb-4">
-              Schlagball kombiniert Elemente aus Baseball, Brennball und Völkerball. Zwei Teams wechseln sich im Schlagrecht ab. 
-              Die Spieler des schlagenden Teams schlagen den Ball ins Spielfeld und laufen durch das Feld zu einem Mal und zurück,
-              um Punkte zu sammeln. Das andere Team versucht, den Ball zu kontrollieren, ihn geschickt zuzuspielen und die Läufer 
-              abzuwerfen. Nach einem erfolgreichen Abwurf wechseln die Teams die Rollen.
+            <p className="text-gray-700 mb-4">Das Schlagballspiel ist ein Spiel, bei dem sich z
+              wei Parteien von je zwölf oder auch sechs Spielern gegenüberstehen. Gekämpft wird um
+              das Schlagrecht und die höhere Punktzahl nach einer festen Spieldauer. Die Schlagpartei (nach
+              GutsMuths die herrschende Partei[3]) verteidigt das Schlagrecht, und die Feld- oder Fangpartei
+              (nach GutsMuths die dienende Partei[3]) versucht, es zu erringen. Die Schlagpartei mit dem wechs
+              elnden Schläger besetzt das Schlagmal und versucht, durch Schläge ihre Läufe zum Laufmal hin- und 
+              herzubringen.Die Feldpartei (mit den Fängern) besetzt das Lauffeld und den Schrägraum in beliebiger 
+              Verteilung. Die Fänger versuchen, die geschlagenen Bälle zu fangen oder aufzunehmen, durch Zuspiel die 
+              laufenden Schläger einzukreisen und abzuwerfen oder zu treffen, über die Grenzen des Lauffeldes zu treiben 
+              oder den Ball zurück ins Schlagmal zu werfen, um den Gegner am Gewinn weiterer Punkte zu hindern.
+              Bei erfolgreichem Feldspiel der Feldpartei und mit jedem Wechselpunkt erhält die Feldpartei das Schlagrecht, sie wird zur 
+              neuen Schlagpartei. Verbunden mit dem Malwechsel zum Schlagmal können die Spieler der neuen Schlagpartei sofort wieder von der neuen Fangpartei abgeworfen werden.
             </p>
             <div className="hidden md:block">
               <h4 className="text-xl font-semibold mb-2">Regeln</h4>
@@ -23,14 +30,32 @@ export function SportSection() {
                 <li>Zwei Teams mit je 12 Spielern</li>
 
               </ul>
-              <h4 className="text-xl font-semibold mb-2">Wir benutzen</h4>
-              <ul className="list-disc list-inside text-gray-700 mb-4">
-                <li>Schlagball: Ein Tennisball großer Lederball</li>
-                <li>Keule: Zum Schlagen des Balles ins Spielfeld</li>
-
-              </ul>
+              <h4 className="text-xl font-semibold mb-2">Equipment</h4>
+              
+              <h5 className="text-l font-semibold mb-2">Schlagball (Ball)</h5>
+                <p className="list-disc list-inside text-gray-700 mb-4">
+                  Spielgerät ist ein Lederball, der Schlagball. Das Gewicht des Balles soll vor dem Spiel mindestens 70 g, höchstens 85 g betragen, 
+                  der Umfang 19 cm bis 21 cm. Das Leder soll wegen der Blendung im Sonnenschein keine helle Farbe haben. Der Regelball 
+                  soll rot sein, jedoch ist mit Zustimmung beider Teams jede Farbe erlaubt.
+                </p>
+                <p>
+                  Das Schlagholz, auch Klippe genannt, darf unbegrenzt lang sein; es muss aus einheitlichem Naturholz und kreisrund im Querschnitt sein 
+                  und darf am unteren Ende bis zu 3 cm dick sein. Das Griffende und der Schaft des Holzes dürfen dünner und mit Handschlinge oder Endknauf versehen sein. Das Schlagende
+                  darf nicht künstlich beschwert werden. Ein Umwickeln mit Draht, Leder und dergleichen ist verboten. Jeder Spieler darf sein eigenes Schlagholz 
+                  benutzen. Alle in das Spiel gebrachten Geräte sind Gemeingut.
+                </p>
+              <h4>Spielfeld</h4>
+              <p>
+                Das rechteckige Spielfeld ist 70 m × 25 m mit einem sich anschließenden Weitschlagfeld, das sich aus einer Verlängerung der Diagonalen durch das Spielfeld ergibt. 
+                Die Grundlinie ist das Schlagmal, die gegenüber liegende Linie ist das Fangmal. 10 m vor dem Fangmal stehen zwei Tickstangen mit einem Abstand von 4 m. Laufmale sind 
+                die Tickstangen. Hinter dem Spielfeld schließt sich in Verlängerung der Diagonalen des Spielfeldes das Weitschlagfeld an.
+                Das Fangmal ist in den Spielregeln nach Gutsmuths das Laufziel,[3] in den neueren Spielregeln sind es lediglich die Tickstangen
+              </p>
+              
               <h4 className="text-xl font-semibold mb-2">Turniere</h4>
-              <p className="text-gray-700 mb-2">Unser Verein organisiert jedes Jahr das Winterhuder Herbstturnier</p>
+                <p className="text-gray-700 mb-2">Unser Verein organisiert jedes Jahr im September das Winterhuder Herbstturnier</p>
+                <p className="text-gray-700 mb-2">Himmelfahrt Spiekeroog - Deutsche Meisterschaft</p>
+                <p className="text-gray-700 mb-2">Kieler Woche</p>
               <ul className="list-disc list-inside text-gray-700 mb-4">
                 <li>Herbstturnier </li>
               </ul>
